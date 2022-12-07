@@ -1,0 +1,80 @@
+@import './font.scss';
+
+:root {
+    --font-name: 'Gilroy';
+    --main-blue: #22253B;
+    --main-orange: #F15525;
+    --main-white: #fff;
+    --main-light-blue: #38BFF2;
+    --tech-light-blue: #50C0FF;
+    --tech-light-orange: #FF6F50;
+    --tech-light-green: #4BD071;
+    --tech-dark-blue: #5096FF;
+    --tech-light-yellow: #FFB359;
+    --tech-light-violet: #AF93FF;
+    --copyright-gray: #8E8E8E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-name);
+}
+
+img {
+    user-select: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1190px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-light-blue);
+    border-radius: 50px;
+}
+
+.header__content-title {
+    .bracket {
+        color: var(--main-orange);
+
+        .italic {
+            color: var(--main-blue);
+            font-style: italic;
+            font-weight: 800;
+        }
+    }
+}
+
+text {
+    color: var(--main-blue);
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+    color: var(--main-blue);
+}
