@@ -80,7 +80,11 @@ export default {
 
 .study-comforts__section {
     width: 100%;
-    padding: 40px 0;
+    padding: 55px 0;
+    background: var(--main-white);
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    box-shadow: 0 25px 30px rgba($color: #38BFF2, $alpha: .15);
 
     .row {
         flex-direction: column;

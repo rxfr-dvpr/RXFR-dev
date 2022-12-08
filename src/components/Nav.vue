@@ -204,6 +204,7 @@ export default {
         border: 0;
         color: var(--copyright-gray);
         font-size: 30px;
+        cursor: pointer;
 
         i {
             opacity: 0.7;

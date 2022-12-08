@@ -13,6 +13,7 @@
     --tech-light-yellow: #FFB359;
     --tech-light-violet: #AF93FF;
     --copyright-gray: #8E8E8E;
+    --body-color: rgb(235, 245, 248);
 }
 
 * {
@@ -34,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: var(--body-color);
+}
+
 .container {
     max-width: 1190px;
     width: 100%;
@@ -50,7 +55,8 @@ a {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
+    height: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -77,4 +83,29 @@ text {
 h1, h2, h3, 
 h4, h5, h6 {
     color: var(--main-blue);
+}
+
+.orange-btn {
+    max-width: max-content;
+    background: transparent;
+    border: 0;
+    font-size: 17px;
+    color: var(--main-white);
+    font-weight: 500;
+    padding: 15px 20px;
+    display: flex;
+    column-gap: 15px;
+    background: var(--tech-light-orange);
+    border-radius: 82px;
+    cursor: pointer;
+    transition: .4s;
+
+    i {
+        margin-top: 3.5px;
+        font-size: 15px;
+    }
+
+    &:hover {
+        background: var(--tech-light-blue);
+    }
 }

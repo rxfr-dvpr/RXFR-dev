@@ -24,6 +24,14 @@
                     </div>
 
                 </div>
+
+                <div class="start-btn-box">
+                    <button class="start-btn orange-btn"> Начать обучение <i class="fal fa-external-link"></i>
+                    </button>
+
+                    <p class="start-text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -52,7 +60,8 @@ export default {
                     title: 'Нет ограничений по времени',
                     text: 'Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.'
                 }
-            ]
+            ],
+            bgShadow: require('@/assets/images/main/howWorks/bg-shadow.svg')
         }
     },
     components: {
@@ -66,8 +75,7 @@ export default {
 
 .how-works__section {
     width: 100%;
-    padding: 40px 0;
-    background: rgb(235, 245, 248);
+    padding: 55px 0;
 
     .row {
         flex-direction: column;
@@ -122,17 +130,17 @@ export default {
             row-gap: 15px;
 
             .card-num {
-                font-size: 77px;
+                font-size: calc(50px + 27 * (100vw / 1920));
                 font-weight: 700;
                 color: var(--main-light-blue);
             }
 
             &-title {
-                font-size: 24px;
+                font-size: calc(20px + 4 * (100vw / 1920));
             }
 
             &-text {
-                font-size: 17px;
+                font-size: calc(14px + 3 * (100vw / 1920));
                 font-weight: 500;
                 color: var(--main-blue);
                 display: -webkit-box;
@@ -142,5 +150,92 @@ export default {
             }
         }
     }
+
+    .start-btn-box {
+        max-width: max-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 15px;
+        padding: 12px 14px;
+        background: var(--main-white);
+        border-radius: 110px;
+        overflow: hidden;
+
+        .start-text {
+            max-width: 215px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--main-blue);
+            text-align: start;
+        }
+    }
 }
+
+@media (min-width: 1920px) {
+    .how-works__card {
+        .card-num {
+            font-size: 77px !important;
+        }
+        
+        &-title {
+            font-size: 24px !important;
+        }
+
+        &-text {
+            font-size: 17px !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .how-works__cards {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 786px) {
+    
+    .how-works__card {
+        .card-num {
+            font-size: calc(50px + (27 + 27 * 0.7) * ((100vw - 320px)/ 1920));
+        }
+        
+        &-title {
+            font-size: calc(20px + (4 + 4 * 0.7) * ((100vw - 320px)/ 1920));
+        }
+
+        &-text {
+            font-size: calc(14px + (3 + 3 * 0.7) * ((100vw - 320px)/ 1920));
+        }
+    }
+}
+
+@media (max-width: 684px) {
+    .how-works__cards {
+        max-width: max-content;
+        flex-direction: column;
+
+        .how-works__card {
+            row-gap: 8px !important;
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .start-btn-box {
+        max-width: 360px !important;
+        flex-direction: column;
+        border-radius: 30px !important;
+        
+        .start-text {
+            text-align: center !important;
+        }
+    }
+}
+
 </style>

@@ -9,7 +9,7 @@
 
                 <p class="header__content-text">{{ headerContent.text }}</p>
                 
-                <button class="test-btn">Пройти тестирование <i class="fal fa-external-link"></i></button>
+                <button class="test-btn orange-btn">Пройти тестирование <i class="fal fa-external-link"></i></button>
             </div>
 
             <img :src="headerImg" alt="" class="header__img">
@@ -39,8 +39,7 @@ export default {
 
 .header {
     width: 100%;
-    padding: 135px 0 50px;
-    background: rgb(235, 245, 248);
+    padding: 135px 0 60px;
 
     .row  {
         justify-content: space-between;
@@ -77,31 +76,6 @@ export default {
             font-size: calc(14px + 3 * (100vw / 1920));
             color: var(--main-blue);
             font-weight: 500;
-        }
-
-        .test-btn {
-            max-width: max-content;
-            background: transparent;
-            border: 0;
-            font-size: 17px;
-            color: var(--main-white);
-            font-weight: 500;
-            padding: 15px 20px;
-            display: flex;
-            column-gap: 15px;
-            background: var(--tech-light-orange);
-            border-radius: 82px;
-            cursor: pointer;
-            transition: .4s;
-
-            i {
-                margin-top: 3.5px;
-                font-size: 15px;
-            }
-
-            &:hover {
-                background: var(--tech-light-blue);
-            }
         }
     }
 
