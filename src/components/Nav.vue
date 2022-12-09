@@ -3,9 +3,7 @@
         <div class="container">
             <div class="row">
 
-                <router-link to="/" class="logo">
-                    <img :src="logo" alt="" class="logo-icon">
-                </router-link>
+                <router-link to="/" class="logo"><span class="light-blue">R</span>X<span class="orange">F</span>R</router-link>
 
                 <Transition name="fade">
                     <span class="list-bg" v-if="!mbListClosed" @click="mbListClosed = true"></span>
@@ -30,6 +28,8 @@
                 <div class="modals-list">
                     <button class="register-btn" v-if="windowSize > 992">Регистрация</button>
                     <button class="sign-btn"><i class="fal fa-long-arrow-right"></i> Войти</button>
+
+                    
                 </div>
 
                 <button class="mb-nav-btn" v-if="windowSize < 992" @click="mbListClosed = false">
@@ -212,13 +212,18 @@ export default {
     }
 
     .logo {
+        font-size: 28px;
+        color: var(--main-blue);
+        font-weight: 500;
         display: flex;
-        justify-content: center;
         align-items: center;
 
-        img {
-            max-width: 53px;
-            width: 100%;
+        .light-blue {
+            color: var(--main-light-blue);
+        }
+
+        .orange {
+            color: var(--main-orange);
         }
     }
 
@@ -226,8 +231,6 @@ export default {
         display: flex;
         column-gap: 15px;
         align-items: center;
-
-        
 
         .sign-btn {
             border: 0;

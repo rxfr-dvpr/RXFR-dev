@@ -9,7 +9,7 @@
 
                 <p class="header__content-text">{{ headerContent.text }}</p>
                 
-                <button class="test-btn orange-btn">Пройти тестирование <i class="fal fa-external-link"></i></button>
+                <button class="test-btn orange-btn" @click="$emit('modalOpen')">Пройти тестирование <i class="fal fa-external-link"></i></button>
             </div>
 
             <img :src="headerImg" alt="" class="header__img">

@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="start-btn-box">
-                    <button class="start-btn orange-btn"> Начать обучение <i class="fal fa-external-link"></i>
+                    <button class="start-btn orange-btn" @click="$emit('modalOpen')">Начать обучение <i class="fal fa-external-link"></i>
                     </button>
 
                     <p class="start-text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>

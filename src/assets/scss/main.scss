@@ -109,3 +109,12 @@ h4, h5, h6 {
         background: var(--tech-light-blue);
     }
 }
+
+.content-2 {
+    &-btn {
+        i {
+          font-size: 20px;
+          margin-top: 1.5px;
+        }
+    }
+}

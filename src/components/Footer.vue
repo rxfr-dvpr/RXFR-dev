@@ -106,7 +106,7 @@ export default {
         row-gap: 30px;
 
         .footer-logo {
-            font-size: 30px;
+            font-size: 28px;
             color: var(--main-blue);
             font-weight: 500;
             display: flex;
@@ -189,6 +189,7 @@ export default {
         row-gap: 20px;
         border-top: solid 1px #d8d8d8;
         padding: 25px 0;
+        user-select: none;
 
         .all-text {
             font-size: 15px;
