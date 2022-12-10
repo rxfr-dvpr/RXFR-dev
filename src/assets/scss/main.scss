@@ -85,15 +85,20 @@ h4, h5, h6 {
     color: var(--main-blue);
 }
 
+input {
+    outline: none;
+}
+
 .orange-btn {
     max-width: max-content;
     background: transparent;
     border: 0;
-    font-size: 17px;
+    font-size: calc(14px + 3 * (100vw / 1920));
     color: var(--main-white);
     font-weight: 500;
     padding: 15px 20px;
     display: flex;
+    align-items: center;
     column-gap: 15px;
     background: var(--tech-light-orange);
     border-radius: 82px;
@@ -107,6 +112,12 @@ h4, h5, h6 {
 
     &:hover {
         background: var(--tech-light-blue);
+    }
+}
+
+@media (min-width: 1920px) {
+    .orange-btn {
+        font-size: 17px !important;
     }
 }
 
